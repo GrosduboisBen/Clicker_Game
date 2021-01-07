@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+  <head>
+    <meta charset="utf-8">
+    <title>Craft Mania</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" href="./img/hammer.jpg">
+    <script src="./js/script.js" charset="utf-8"></script>
+    <script src="https://kit.fontawesome.com/ccdb88f8bd.js" crossorigin="anonymous"></script>
+  </head>
+
+  <body onload=initialDisplay()>
+    <header>
+      <img class="tit" src="./img/title.png">
+    </header>
+
+    <main>
+
+      <div class="shop" id="shop"></div>
+
+      <div class="center">
+
+        <div class="c_golds">
+          <h1> Golds </h1>
+          <section id="gold" class="num_golds"></section>
+        </div>
+
+        <div class="c_gps">
+          <h2> Golds / seconds </h2>
+          <section id="gps" class="num_gps"></section>
+        </div>
+
+        <div class="click_container">
+          <button type="button" class="click">
+            <img src="./img/hammer.jpg" onclick=clickFarm() title="Click to craft some golds !">
+          </button>
+        </div>
+
+        <button id="production" type="button" class="auto" onclick=changeState() title="Production launched. Lay down, take a break, come back later.">production started</button>
+        <button id="reset" type="button" class="reset" onclick="resetUser()" title="Destroy everything and restart from 0.">delete_user</button>
+
+        <section id="shop"></section>
+
+      </div>
+
+      <div class="owned" id="owned"></div>
+
+    </main>
+
+    <footer>
+      <p class="copyright">© 2020 Click Mania.inc and individual contributors. All rights reserved.</p>
+    </footer>
+
+  </body>
+
+</html>
